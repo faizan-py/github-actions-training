@@ -14,6 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.1.1
-      - run: "This was triggered by this event -----"
-      - run: "This was triggered by this branch -----"
+      - run: echo "This was triggered by this event -----"
+      - run: echo "This was triggered by this branch -----"
       - run: tree
