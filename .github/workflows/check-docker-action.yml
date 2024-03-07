@@ -12,7 +12,7 @@ jobs:
 
       - name: run my custom docker container
         id: custom-faizan-action
-        uses: ./hello-world-docker-action/action.yml
+        uses: ./hello-world-docker-action
         with: 
           who-to-greet: "Faizan Ahmad from Volo"
 
