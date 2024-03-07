@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.1.1
-      - run: echo "This was triggered by this event -----"
-      - run: echo "This was triggered by this branch -----"
+      - run: echo "This was triggered by this event ${{ github.event_name }}"
+      - run: echo "This was triggered by this branch ${{ github.ref }}"
+      - run: echo "This repo has this files"
       - run: tree
