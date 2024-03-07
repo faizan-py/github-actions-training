@@ -1,0 +1,19 @@
+name: Faizan's first hands-on workflow
+on:
+  push:
+    branches: [ main ]
+    paths-ignore: [.github/**]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '15 6 * * 0'
+  workflow_dispatch:
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - run: "This was triggered by this event -----"
+      - run: "This was triggered by this branch -----"
+      - run: tree
