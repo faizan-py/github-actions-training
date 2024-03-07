@@ -17,4 +17,4 @@ jobs:
           who-to-greet: "Faizan Ahmad from Volo"
 
       - name: Output time set in the container
-        run: echo "The time was ${{ steps.hello-action.outputs.time }} when the action said hello"
+        run: echo "The time was ${{ steps.custom-faizan-action.outputs.time }} when the action said hello"
